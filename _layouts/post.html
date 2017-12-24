@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<article class="post">
+  <hr>
+  {% if page.archive == nil %}<h4 class="post-title">{{ page.title }}</h4>{% endif %}
+  {% if page.description %}<span class="post-description">{{ page.description | markdownify }}</span>{% endif %}
+  {% if page.client %}<p class="post-client"> Created for<strong>  {{ page.client }}</strong></p>{% endif %}
+  {{ content }}
+  <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
+
+</article>
+
+<hr>

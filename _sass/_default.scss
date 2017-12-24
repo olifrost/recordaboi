@@ -1,0 +1,87 @@
+// Global
+
+#logo {
+  width: 100%;
+}
+
+#hero {
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+// Layout
+
+.container {
+	margin: 0 auto;
+	max-width: 100.0rem;
+	padding: 0 2.5rem;
+	position: relative;
+	width: 100%;
+}
+
+// Header
+
+header {
+    text-align: center;
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
+
+    a {
+      color: inherit;
+    }
+
+    .tagline {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      color: black;
+      font-weight: normal;
+
+    }
+}
+
+
+#logo {
+    max-width: 60rem;
+}
+
+.social {
+  max-width: 60rem;
+  margin: auto;
+}
+
+
+footer {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.icon {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.4rem;
+    position: relative;
+
+    svg {
+        width: 100%;
+        height: 100%;
+        path {
+            fill: $black;
+        }
+    }
+}
+
+
+.icon--twitter, .icon--instagram, .icon--mail, .icon--facebook, .icon--youtube {
+  height: 3.5rem;
+  width: 3.5rem;
+  bottom: -0.0rem;
+  margin-right: 1rem
+}
+
+.icon--mail {
+  height: 4rem;
+  width: 4rem;
+  bottom: -0.2  rem;
+}

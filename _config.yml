@@ -1,0 +1,54 @@
+# Permalinks
+permalink:           :title/
+
+# Setup
+title:               Recorda Boi
+tagline:             RAPPER / PRODUCER / RECORDER PLAYER
+description:         RAPPER / PRODUCER / RECORDER PLAYER
+footer:              NICHE Records 2017
+url:                 olifro.st/recordaboi
+baseurl:
+
+# Markdown
+
+
+# SASS
+sass:
+  sass_dir:          _sass
+  style:            compressed
+# Google Analytics
+#analytics_id:  UA-52396823-1
+
+# SEO
+author:
+  name: Recorda Boi
+  twitter: recordaboi
+  instagram: recordaboi
+  facebook: recordaboi
+  youtube: recordaboi
+  email: recordaboi@gmail.com
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /img/logo.png
+
+social:
+  name: Recorda Boi
+  links:
+    - https://twitter.com/recordaboi
+    - https://instagram.com//recordaboi
+
+#google_site_verification
+#logo:
+
+# Excludes
+exclude:
+
+
+# Gems
+gems:
+  #- jekyll-paginate
+  - jekyll-email-protect
+  - jekyll-seo-tag

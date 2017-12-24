@@ -1,0 +1,8 @@
+{% assign website = site.data.websites[include.id] | default: include %}
+
+
+  <div class="browser-mockup with-url with-image hvr-grow" data-url="{{ website.url }}">
+    <a href="{{ website.url }}">
+    <img src="{{ website.src | prepend: site.baseurl }}" alt="{{ website.alt }}">
+    </a>
+</div>

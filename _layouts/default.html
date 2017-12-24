@@ -1,0 +1,71 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+    <header>
+        <div class="container">
+        <div id="hero" class="row middle-xs center-xs">
+        <div class="col-xs-12">
+          <div class="row middle-xs center-xs">
+            <div class="col-xs-12 tagline">
+              <img id="logo" src="{{ "/img/recordaboi.png" | relative_url }}">
+
+            </div>
+          </div>
+          <div class="row around-xs social">
+            <div class="col-xs-1">
+                {% if site.author.youtube %}
+                  {% include icon-youtube.html username=site.author.youtube %}
+                {% endif %}
+            </div>
+            <div class="col-xs-1">
+                {% if site.author.instagram %}
+                  {% include icon-instagram.html username=site.author.instagram %}
+                {% endif %}
+            </div>
+            <div class="col-xs-1">
+                {% if site.author.twitter %}
+                  {% include icon-twitter.html username=site.author.twitter %}
+                {% endif %}
+            </div>
+            <div class="col-xs-1">
+                {% if site.author.facebook %}
+                  {% include icon-facebook.html username=site.author.facebook %}
+                {% endif %}
+            </div>
+
+            <div class="col-xs-1">
+                {% if site.author.email %}
+                  {% include icon-mail.html username=site.author.email %}
+                {% endif %}
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="tagline">{{ site.tagline }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <main class="content">
+            {{ content }}
+        </main>
+        {% include footer.html %}
+    </div>
+
+
+</body>
+
+</html>
