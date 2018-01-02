@@ -50,5 +50,6 @@ exclude:
 # Gems
 gems:
   #- jekyll-paginate
-  - jekyll-email-protect
+  - jekyll-feed
+  - jekyll-sitemap
   - jekyll-seo-tag
